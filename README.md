@@ -3,13 +3,8 @@
 
 # This is a Project of projects.
 
-
-<<<<<<< HEAD
 A tradition by .
 [https://github.com/Code-Warlock] Code Warlock
-=======
-A tradition by (https://github.com/Code-Warlock)[Code Warlock]
->>>>>>> a134b8030dd8fff56bd6a38ee97762fee88de924
 
 Each inner project contains seven more projects on each technology.
 The list will be eventually updated but for now the list of technologies to use for this fest is ;
