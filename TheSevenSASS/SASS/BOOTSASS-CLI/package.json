@@ -1,0 +1,25 @@
+{
+  "name": "bootsass-cli",
+  "version": "1.0.0",
+  "description": "Boostrap v5 with SASS",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass-cli" : "sass --watch sass:assets/css"
+  },
+  "keywords": [
+    "boostrap5",
+    "SASS",
+    "bootstrap-cli",
+    "SASS-cli"
+  ],
+  "author": "Code Warlock",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^5.1.3"
+  }
+}

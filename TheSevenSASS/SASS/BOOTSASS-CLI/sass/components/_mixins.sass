@@ -1,0 +1,12 @@
+@use "../bootstrap_custom" as *
+
+@mixin gradient
+  background: linear-gradient(135deg , $smooth-brown 40% ,$smooth-brown-100 20%,$smooth-brown-900)
+@mixin media-query-down($var)
+  @media screen and (max-width : $var)
+    @content
+
+
+@mixin media-query-up($var)
+  @media screen and (min-width : $var)
+    @content
