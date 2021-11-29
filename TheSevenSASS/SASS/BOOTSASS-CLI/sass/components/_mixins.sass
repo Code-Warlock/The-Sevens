@@ -10,3 +10,21 @@
 @mixin media-query-up($var)
   @media screen and (min-width : $var)
     @content
+
+
+@mixin background-in-text
+  color: transparent
+  background-clip: text
+  background-position: top center
+  -webkit-background-clip : text
+
+
+
+
+// abs-centraliser
+
+@mixin abs-centraliser
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50% , -50%)

@@ -11119,6 +11119,90 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes socials {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes bg-swipe {
+  0% {
+    background: linear-gradient(135deg, #7c3f00 20%, #ac5600 40%, #ffb575);
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+    background-position: top center;
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: linear-gradient(315deg, #421f00 20%, #ac5600 40%, #ffd8af);
+    background-size: contain;
+    color: transparent;
+    background-clip: text;
+    background-position: top center;
+    -webkit-background-clip: text;
+  }
+}
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.display-2--intro {
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #492500;
+  display: inline-block;
+  background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
+  color: transparent;
+  background-clip: text;
+  background-position: top center;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.display-2--description {
+  color: #24231F;
+  font-size: 1rem;
+  display: block;
+  margin-top: 1.2rem;
+  text-transform: none;
+}
+
+.btn-rounded {
+  position: relative;
+  padding: 0.94rem 4.4rem 0.94rem;
+  font-weight: 700;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: white;
+  transition: 1s ease;
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #24231F;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
+  color: #fff;
+}
+.btn-rounded:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 #sidebar-nav {
   font-size: 0.8rem;
   overflow: hidden;
@@ -11174,27 +11258,52 @@ textarea.form-control-lg {
 }
 #sidebar-nav .form {
   width: auto;
+  margin: 0 auto;
 }
 #sidebar-nav .form-control, #sidebar-nav .form-control:not(:focus) {
-  margin: 0 auto;
   width: 20vw;
+  transition: 0.2s;
+  font-size: 15px;
   transition: 0.2s;
 }
 #sidebar-nav .form-control:focus, #sidebar-nav .form-control:hover {
-  transform: scaleX(1.5);
   margin-left: 0;
   margin-right: 0;
 }
-#sidebar-nav .form-control:not(:focus) input[type=text] {
+#sidebar-nav input[type=text] {
   height: 0.3rem;
-  font-size: 0.8rem;
 }
 #sidebar-nav .call-to-action {
+  position: relative;
+  bottom: 0vh;
   transform: translateY(-3vh);
   margin-top: -1vh;
+  text-align: center;
 }
-#sidebar-nav .call-to-action span {
-  font-size: 0.6rem !important;
+#sidebar-nav .call-to-action:first-child {
+  word-spacing: 20px;
+  font-size: 1rem;
+}
+#sidebar-nav .call-to-action .socials a {
+  width: auto;
+  color: transparent;
+  background: linear-gradient(135deg, #7c3f00 20%, #ac5600 40%, #ffb575);
+  background-size: contain;
+  color: transparent;
+  background-clip: text;
+  background-position: top center;
+  -webkit-background-clip: text;
+  transition: 0.2s;
+}
+#sidebar-nav .call-to-action .socials a:hover {
+  color: transparent;
+  background: linear-gradient(135deg, #e27300 20%, #ff8913 40%, #ffd1a8);
+  color: transparent;
+  background-clip: text;
+  background-position: top center;
+  -webkit-background-clip: text;
+  background-size: contain;
+  transition: 0.2s;
 }
 #sidebar-nav .btn-sm {
   color: #24231F;
@@ -11202,9 +11311,10 @@ textarea.form-control-lg {
 #sidebar-nav .mail-to {
   color: transparent;
   background: linear-gradient(135deg, #7c3f00 20%, #ac5600 40%, #ffb575);
-  background-position: top center;
   background-size: contain;
+  color: transparent;
   background-clip: text;
+  background-position: top center;
   -webkit-background-clip: text;
   transition: 0.5s;
 }
@@ -11258,10 +11368,10 @@ textarea.form-control-lg {
   background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
 }
 
-section {
-  width: 100vw;
-  margin: 0;
+.pres-sect {
+  background: #F0BE8B;
 }
+
 @media screen and (min-width: 768px) {
   section {
     font-size: 0.8rem;
@@ -11270,18 +11380,32 @@ section {
     margin-left: 25%;
     transition: 0.5s;
   }
+  section .carousel-indicators {
+    top: 90%;
+  }
+  section .carousel-indicators [type=button] {
+    color: white;
+    background-color: #0F0700;
+  }
+  section .carousel-inner .carousel-item .carousel-caption {
+    top: 30%;
+    transform: translateY(-50%);
+    color: #24231F;
+    text-shadow: 1px 1px 2px white, 2px 2px 4px #492500;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    box-sizing: content-box;
+    height: 17vh;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
   section .carousel-inner .carousel-item img {
+    object-fit: cover;
+    object-position: top center;
     width: 100%;
     height: 100vh;
-    color: #24231F;
   }
-}
-section .carousel-control-prev {
-  background: #0F0700;
-  color: transparent;
-  background-position: top center;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=main.css.map */
