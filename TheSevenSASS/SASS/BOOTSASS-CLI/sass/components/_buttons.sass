@@ -2,6 +2,7 @@
 @use "../components/mixins" as *
 .btn-rounded
   position: relative
+  margin-top: 5rem
   padding: 0.94rem 4.4rem 0.94rem
   font-weight: 700
   border: 0.1rem solid rgba(255 ,255,255 , 0.6)
@@ -25,3 +26,23 @@
     color: $white
     span
       background-color: rgba(0 , 0 , 0 , 0.6)
+@include media-query-down(768px)
+  .btn-rounded
+    position: relative
+    padding: 0.5rem 3.3rem 0.5rem
+    font-weight: 500
+    border: 0.1rem solid rgba(255 ,255,255 , 0.6)
+    margin
+    span
+      position: absolute
+      background-color: $primary
+      width: 2.5rem
+      height: 2.5rem
+      top: 50%
+      right: 0px
+      transform: translateY(-50%)
+      border-radius: 50%
+      i
+        color: $white
+        font-size: 0.8rem
+        line-height: 2.2rem

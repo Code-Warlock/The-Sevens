@@ -11174,6 +11174,7 @@ textarea.form-control-lg {
 
 .btn-rounded {
   position: relative;
+  margin-top: 5rem;
   padding: 0.94rem 4.4rem 0.94rem;
   font-weight: 700;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
@@ -11203,7 +11204,31 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+  .btn-rounded {
+    position: relative;
+    padding: 0.5rem 3.3rem 0.5rem;
+    font-weight: 500;
+    border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  }
+  .btn-rounded span {
+    position: absolute;
+    background-color: #24231F;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  .btn-rounded span i {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 2.2rem;
+  }
+}
 #sidebar-nav {
+  z-index: 1000;
   font-size: 0.8rem;
   overflow: hidden;
   width: 25%;
@@ -11369,7 +11394,12 @@ textarea.form-control-lg {
 }
 
 .pres-sect {
-  background: #F0BE8B;
+  overflow-x: hidden;
+  background: url(../svg/wave1.svg) repeat-x top, url(../svg/wave2.svg) repeat-x top;
+  background-size: cover, auto;
+}
+.pres-sect .get-waves {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -11388,7 +11418,42 @@ textarea.form-control-lg {
     background-color: #0F0700;
   }
   section .carousel-inner .carousel-item .carousel-caption {
-    top: 30%;
+    top: 30vh;
+    transform: translateY(-50%);
+    color: #24231F;
+    text-shadow: 1px 1px 2px white, 2px 2px 4px #492500;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    box-sizing: content-box;
+    height: 17vh;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  section .carousel-inner .carousel-item img {
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  section {
+    font-size: 0.8rem;
+    overflow: hidden;
+    width: 100%;
+    margin-left: 0px;
+    transition: 0.5s;
+  }
+  section .carousel-indicators {
+    top: 90%;
+  }
+  section .carousel-indicators [type=button] {
+    color: white;
+    background-color: #0F0700;
+  }
+  section .carousel-inner .carousel-item .carousel-caption {
+    top: 30vh;
     transform: translateY(-50%);
     color: #24231F;
     text-shadow: 1px 1px 2px white, 2px 2px 4px #492500;
