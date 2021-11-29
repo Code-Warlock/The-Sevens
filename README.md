@@ -4,7 +4,7 @@
 # This is a Project of projects.
 
 A tradition by .
-[https://github.com/Code-Warlock] Code Warlock
+[Code Warlock](https://github.com/Code-Warlock)
 
 Each inner project contains seven more projects on each technology.
 The list will be eventually updated but for now the list of technologies to use for this fest is ;
