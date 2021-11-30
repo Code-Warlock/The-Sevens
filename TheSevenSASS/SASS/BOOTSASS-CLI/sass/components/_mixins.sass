@@ -11,6 +11,10 @@
   @media screen and (min-width : $var)
     @content
 
+@mixin media-query-breakpoint($var)
+  @media screen and (width : $var)
+    @content
+
 
 @mixin background-in-text
   color: transparent

@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
     <title>BOOTSASS-CLI</title>
   </head>
-  <body>
+  <body id="home">
       <!--
-      ====================================================
+=============================================================================================================
                           NAVBAR <=MEDIUM SCREEN
-     =====================================================
+=============================================================================================================
    -->
-   <nav class="navbar topNav navbar-expand-lg d-xs-block d-md-none navbar-light bg-primary shadow fixed-top">
+
+<nav class="navbar topNav navbar-expand-lg d-xs-block d-md-none navbar-light bg-primary shadow fixed-top">
        <div class="container-fluid">
          <a class="navbar-brand text-light" href="#">HAYHUD LOCUST BEANS</a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +23,10 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
              <li class="nav-item">
-               <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+               <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active text-light" aria-current="page" href="#services">Services</a>
              </li>
              <li class="nav-item dropdown">
                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,45 +51,48 @@
            </form>
          </div>
        </div>
-     </nav>
+</nav>
 
      <!--
-     ====================================================
+=============================================================================================================
                          NAVBAR >=LARGE SCREEN
-    =====================================================
+=============================================================================================================
   -->
-   <nav class="navbar bigScreenNav navbar-expand  d-md-flex flex-column align-items-start" id="sidebar-nav">
+ <nav class="navbar bigScreenNav navbar-expand  d-md-flex flex-column align-items-start" id="sidebar-nav">
      <a href="#" class="navbar-brand text-light mt-5">
        <div class="text-center align-items-center brand-text justify-content-center font-weight-bold">
               HAYHUD LOCUST BEANS
        </div>
        <img class="img-thumbnail rounded" src="assets/images/hayhud_logo.png" alt="Brand Logo" />
      </a>
-    <ul class="navbar-nav d-flex flex-column text-center w-100">
-      <li class="nav-item w-100">
-        <a href="#" class="nav-link text-light ">Home</a>
-      </li>
-      <li class="nav-item w-100">
-        <a href="#" class="nav-link text-light ">About</a>
-      </li>
-      <li class="nav-item w-100">
-        <a href="#" class="nav-link text-light ">Contact</a>
-      </li>
-      <li class="nav-item mx-2 w-100 dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Products
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Explore Products</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Products Photo Gallery</a></li>
-          </ul>
+      <ul class="navbar-nav d-flex flex-column text-center w-100">
+        <li class="nav-item w-100">
+          <a href="#home" class="nav-link text-light ">Home</a>
         </li>
-    </ul>
-    <form class="form input-group mb-5">
-  <input type="email" required class="form-control" placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter" aria-describedby="button-addon2" id="newsletter">
-  <button class="btn btn-sm btn-light" type="submit" id="button-addon2">OK</button>
-</form>
+        <li class="nav-item w-100">
+          <a href="#" class="nav-link text-light ">About</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="#services" class="nav-link text-light ">Services</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="#" class="nav-link text-light ">Contact</a>
+        </li>
+        <li class="nav-item mx-2 w-100 dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Explore Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Products Photo Gallery</a></li>
+            </ul>
+          </li>
+      </ul>
+      <form class="form input-group mb-5">
+        <input type="email" required class="form-control" placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter" aria-describedby="button-addon2" id="newsletter">
+        <button class="btn btn-sm btn-light" type="submit" id="button-addon2">OK</button>
+      </form>
   <div class="call-to-action w-100">
     <div class="text-light d-block">
       <span>Contact us <a href="mailto:hayhudnig@gmail.com" class="mail-to">@hayhudnig@gmail.com</a></span>
@@ -96,14 +103,13 @@
       </span>
     </div>
   </div>
-   </nav>
+</nav>
 
-
-   <!--
-   ===================================================================
-                             CAROUSEL SECTION
-   ===================================================================
-  -->
+ <!--
+ =============================================================================================================
+                           CAROUSEL SECTION
+ =============================================================================================================
+-->
 <section>
   <div id="carouselExampleCaptions" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -168,12 +174,11 @@
 
 
 <!--
-=======================================================================================
+=============================================================================================================
                               Presentations
-=======================================================================================
+=============================================================================================================
  -->
  <section class="pres-sect">
-    <!-- <img src="./assets/svg/wave1.svg" alt=""> -->
    <div class="container">
      <div class="row align-items-center text-light presentation">
        <div class="col-md-6 text-start presentation-sect">
@@ -189,8 +194,7 @@
        </div>
      </div>
 
-     <div class="row align-items-center text-light presentation">
-
+     <div class="row d-flex flex-row-reverse align-items-center text-light presentation">
        <div class="col-md-6 text-start presentation-sect">
          <h1 class="display-5">
            <span class="display-2--intro">Welcome to HAYHUD</span>
@@ -218,6 +222,306 @@
          </div>
        </div>
      </div>
+     <div class="row d-flex flex-row-reverse align-items-center text-light presentation">
+       <div class="col-md-6 text-start presentation-sect">
+         <h1 class="display-5">
+           <span class="display-2--intro">Welcome to HAYHUD</span>
+           <span class="display-2--description lead lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</span>
+         </h1>
+       </div>
+       <div class="col-md-6 text-end presentation-sect">
+         <div class="image-box">
+           <img src="./assets/illustrations/watermelon.png" class="img-fluid" alt="image illustration">
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+<!--
+=============================================================================================================
+                                                SERVICES
+=============================================================================================================
+ -->
+ <section id="services" class="services">
+   <div class="container">
+     <div class="row text-center">
+       <h1 class="display-3 fw-bold">Our Services</h1>
+       <div class="heading-line"></div>
+     </div>
+   <!-- description content -->
+     <div class="row pt-2 pb-2 mt-5 mb-3">
+       <div class="col-md-6 border-right">
+         <div class="bg-white p-3">
+           <h2 class="fw-bold text-capitalize title text-center">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           </h2>
+         </div>
+       </div>
+       <div class="col-md-6">
+         <div class="bg-white p-4 text-start">
+           <p class="fw-light details">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           </p>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- Content for services -->
+   <div class="container">
+     <!-- Start services section 1 -->
+     <div class="row d-flex flex-row-reverse">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__content">
+           <div class="icon d-block fas fa-paper-plane"></div>
+           <h1 class="display-3--intro mt-1">Marketing</h1>
+           <p class="lh-large display-3--description">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
+           </p>
+           <button type="button" class="rounded-pill btn-rounded bt-outline-primary" name="button">Learn More
+           <span>
+             <i class="fas fa-arrow-right"></i>
+           </span></button>
+         </div>
+       </div>
+         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__pic">
+           <img src="./assets/illustrations/marketing.png" alt="">
+         </div>
+       </div>
+     </div>
+     <!-- Start services section 2 -->
+
+     <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__content">
+           <div class="icon d-block fas fa-paper-plane"></div>
+           <h1 class="display-3--intro mt-1">Quality Customer Care</h1>
+           <p class="lh-large display-3--description">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
+           </p>
+           <button type="button" class="rounded-pill btn-rounded bt-outline-primary" name="button">Learn More
+           <span>
+             <i class="fas fa-arrow-right"></i>
+           </span></button>
+         </div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__pic">
+            <img src="./assets/illustrations/salesman.png" alt="">
+         </div>
+       </div>
+     </div>
+     <!-- Start services section 3 -->
+     <div class="row">
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__pic">
+            <img src="./assets/illustrations/lunch.png" alt="">
+         </div>
+       </div>
+       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+         <div class="services__content">
+           <div class="icon d-block fas fa-paper-plane"></div>
+           <h1 class="display-3--intro mt-1">Great Export/Import Plans</h1>
+           <p class="lh-large display-3--description">
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
+           </p>
+           <button type="button" class="rounded-pill btn-rounded bordered" name="button">Learn More
+           <span>
+             <i class="fas fa-arrow-right"></i>
+           </span></button>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+ <!--
+=============================================================================================================
+                                        Companies
+=============================================================================================================
+  -->
+  <section id="companies" class="companies">
+    <div class="container">
+      <div class="row text-center ">
+        <h4 class="fw-bold lead mb-3">Meet our Clients</h4>
+        <div class="heading-line mb-3"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-google"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
+        </div>
+        <div class="col-md-4">
+          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+=============================================================================================================
+                                    CLIENT VIEWS
+=============================================================================================================
+ -->
+ <section id="client_views" class="client_views">
+   <div class="container">
+     <div class="row text-center text-white">
+         <h1 class="display-3 text-light fw-bold">Clients Views</h1>
+         <hr style="width:100px;height:3px" class="mx-auto">
+         <p class="lead pt-1">Reviews from our Clients</p>
+     </div>
+     <div class="row align-items-center">
+       <!-- Clients' carousel -->
+
+       <div id="carouselExampleCaptions2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+       <div class="carousel-inner">
+         <!-- CAROUSEL ITEM 1 -->
+         <div class="carousel-item active">
+           <!-- Clients Views Card -->
+          <div class="client_views__card">
+            <p class="lh-lg">
+              <i class="fas fa-quote-left"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
+              <i class="fas fa-quote-right"></i>
+              <div class="ratings p-1">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+            </p>
+          </div>
+          <!-- Client's Picture -->
+          <div class="client_views__pix">
+            <img src="./assets/images/client_1.jpg" alt="Client-1"  class="rounded-circle img-fluid">
+          </div>
+          <!-- Clients' name and role -->
+          <div class="client_views__name">
+            <h3>Code Petrus</h3>
+            <p class="fw-light">CEO & founder</p>
+          </div>
+        </div>
+        <!-- End -->
+
+
+
+          <!-- CAROUSEL ITEM 2 -->
+          <div class="carousel-item">
+            <!-- Clients Views Card -->
+           <div class="client_views__card">
+             <p class="lh-lg">
+               <i class="fas fa-quote-left"></i>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
+               <i class="fas fa-quote-right"></i>
+               <div class="ratings p-1">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+               </div>
+
+             </p>
+           </div>
+           <!-- Client's Picture -->
+           <div class="client_views__pix">
+             <img src="./assets/images/client_2.jpg" alt="Client-2"  class="rounded-circle img-fluid">
+           </div>
+           <!-- Clients' name and role -->
+           <div class="client_views__name">
+             <h3>Code Warlock</h3>
+             <p class="fw-light">CEO & founder</p>
+           </div>
+         </div>
+         <!-- End -->
+
+
+
+           <!-- CAROUSEL ITEM 3 -->
+           <div class="carousel-item">
+             <!-- Clients Views Card -->
+            <div class="client_views__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
+                <i class="fas fa-quote-right"></i>
+                <div class="ratings p-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+
+              </p>
+            </div>
+            <!-- Client's Picture -->
+            <div class="client_views__pix">
+              <img src="./assets/images/client_3.jpg" alt="Client-3"  class="rounded-circle img-fluid">
+            </div>
+            <!-- Clients' name and role -->
+            <div class="client_views__name">
+              <h3>Code Warrior</h3>
+              <p class="fw-light">CEO & founder</p>
+            </div>
+          </div>
+          <!-- End -->
+
+
+
+            <!-- CAROUSEL ITEM 4 -->
+            <div class="carousel-item">
+              <!-- Clients Views Card -->
+             <div class="client_views__card">
+               <p class="lh-lg">
+                 <i class="fas fa-quote-left"></i>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
+                 <i class="fas fa-quote-right"></i>
+                 <div class="ratings p-1">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                 </div>
+               </p>
+             </div>
+             <!-- Client's Picture -->
+             <div class="client_views__pix">
+               <img src="./assets/images/client_4.jpg" alt="Client-4"  class="rounded-circle img-fluid">
+             </div>
+             <!-- Clients' name and role -->
+             <div class="client_views__name">
+               <h3>Captain Code</h3>
+               <p class="fw-light">CEO & founder</p>
+             </div>
+           </div>
+           <!-- End -->
+       </div>
+       <div class="text-center">
+         <button class="btn btn-outline-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev"></button>
+         <button class="btn btn-outline-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next"></button>
+       </div>
+     </div>
+    </div>
    </div>
  </section>
     <!-- JavaScript Bundle with Popper -->
