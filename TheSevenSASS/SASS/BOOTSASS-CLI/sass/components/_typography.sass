@@ -2,23 +2,21 @@
 @use "../components/mixins" as *
 *
   font-family: "Poppins" , sans-serif
-
-.title
-  color: $smooth-brown
 .details
   color: $smooth-brown-100
 .display-3
   @include gradient
   @include background-in-text
+  font-size: 2rem
   &--intro
-    text-transform: uppercase
+    text-transform: capitalize
     font-variant: small-caps
-    font-size: 2rem
+    font-size: 1.5rem
     text-shadow: 2px 2px 4px $smooth-brown
     display: inline-block
     @include gradient
     @include background-in-text
-    font-weight: 700
+    font-weight: 500
     font-family: sans-serif
   &--description
     color: $text-brown
@@ -67,7 +65,8 @@
   background: $primary
 
 // border-right
-
+.gradient
+  @include gradient
 @include media-query-up(768px)
   .border-right
     border-right: 0.1rem solid $gray-300

@@ -2,48 +2,47 @@
 @use "../components/mixins" as *
 
 .btn-rounded
-
-  position: relative
-  margin-top: 5rem
-  padding: 0.94rem 4.4rem 0.94rem
-  font-weight: 700
-  border: 0.1rem solid rgba(255 ,255,255 , 0.6)
-  background-color: white
-  transition: 1s ease
-  span
-    position: absolute
-    background-color: $primary
-    width: 2.5rem
-    height: 2.5rem
-    top: 50%
-    right: 5px
-    transform: translateY(-50%)
-    border-radius: 50%
-    i
-      color: $white
-      font-size: 1rem
-      line-height: 2.5rem
-  &:hover
-    @include gradient
-    color: $white
-    span
-      background-color: rgba(0 , 0 , 0 , 0.6)
-@include media-query-down(768px)
-  .btn-rounded
     position: relative
-    padding: 0.5rem 3.3rem 0.5rem
-    font-weight: 500
+    margin-top: 5rem
+    padding: 0.94rem 4.4rem 0.94rem
+    font-weight: 700
     border: 0.1rem solid rgba(255 ,255,255 , 0.6)
+    background-color: white
+    transition: 1s ease
     span
       position: absolute
       background-color: $primary
-      width: 2.4rem
-      height: 2.4rem
+      width: 2.5rem
+      height: 2.5rem
       top: 50%
-      right: -1.8px
+      right: 5px
       transform: translateY(-50%)
       border-radius: 50%
       i
         color: $white
-        font-size: 0.8rem
-        line-height: 2.2rem
+        font-size: 1rem
+        line-height: 2.5rem
+    &:hover
+      @include gradient
+      color: $white
+      span
+        background-color: rgba(0 , 0 , 0 , 0.6)
+    @include media-query-down(768px)
+      .btn-rounded
+        position: relative
+        padding: 0.5rem 3.3rem 0.5rem
+        font-weight: 500
+        border: 0.1rem solid rgba(255 ,255,255 , 0.6)
+        span
+          position: absolute
+          background-color: $primary
+          width: 2.4rem
+          height: 2.4rem
+          top: 50%
+          right: -1.8px
+          transform: translateY(-50%)
+          border-radius: 50%
+          i
+            color: $white
+            font-size: 0.8rem
+            line-height: 2.2rem

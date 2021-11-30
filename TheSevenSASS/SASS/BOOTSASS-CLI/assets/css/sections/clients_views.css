@@ -11122,10 +11122,10 @@ textarea.form-control-lg {
   padding: 0;
   position: relative;
   background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
-  color: #fff;
+  color: #24231F;
 }
 .client_views__card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(245, 223, 201, 0.8);
   padding: 2rem 1.25rem;
   border-radius: 0.625rem;
   height: auto;
@@ -11133,7 +11133,7 @@ textarea.form-control-lg {
 }
 .client_views__card i {
   font-size: 1.5rem;
-  color: rgba(36, 35, 31, 0.7);
+  color: rgba(73, 37, 0, 0.7);
 }
 .client_views__card .ratings {
   color: rgba(36, 35, 31, 0.7);
@@ -11149,7 +11149,7 @@ textarea.form-control-lg {
 .client_views__pix img {
   max-width: 800px;
   max-height: 100px;
-  border: 0.325rem solid rgba(36, 35, 31, 0.7);
+  border: 0.325rem solid rgba(245, 223, 201, 0.7);
 }
 .client_views__name {
   padding-top: 4rem;
