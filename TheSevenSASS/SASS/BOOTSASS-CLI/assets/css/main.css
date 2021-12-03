@@ -11505,7 +11505,7 @@ textarea.form-control-lg {
   text-align: center;
   position: relative;
 }
-.companies__logo-box i {
+.companies__logo-box img {
   height: 100%;
 }
 
@@ -11647,7 +11647,7 @@ textarea.form-control-lg {
   font-size: 1.5rem;
   color: rgba(73, 37, 0, 0.7);
 }
-.client_views__card .ratings {
+.client_views__card .ratings i {
   color: rgba(36, 35, 31, 0.7);
   font-size: 1rem;
 }
