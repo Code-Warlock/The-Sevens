@@ -1,0 +1,45 @@
+@use "../bootstrap_custom" as *
+@use "../components/mixins" as *
+.services
+  position: relative
+  padding: 1rem 0
+  &__content
+    padding: 1rem
+    margin-top: 1.5rem
+  .icon
+    font-size: 1.5rem
+    color: $primary
+  &__pic
+    max-width: 100%
+    margin-top: 5rem
+.services
+  &__pic
+    a
+      // position: relative
+      span
+        i
+          font-size: 6rem
+          @include gradient
+          @include background-in-text
+    .border-blink
+      // @include abs-centraliser
+      // position: absolute
+      // top: 0
+      // left: 0
+      width: 6rem
+      height: 6rem
+      border: 0.55rem solid $white
+      border-radius: 50%
+      animation: blink 2s ease infinite
+      &--border-1
+        animation-delay: 1s
+      &--border-2
+        animation-delay: 1.5s
+
+
+@include media-query-up(768px)
+  .services
+    &__content
+      margin-top: 5rem
+      .icon
+        font-size: 2.5rem

@@ -11146,6 +11146,14 @@ textarea.form-control-lg {
     -webkit-background-clip: text;
   }
 }
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -11304,6 +11312,7 @@ textarea.form-control-lg {
   position: fixed;
   background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
   transition: 0.5s;
+  transition: 0.5s;
 }
 #sidebar-nav img.img-thumbnail {
   width: 100%;
@@ -11355,14 +11364,29 @@ textarea.form-control-lg {
   margin: 0 auto;
 }
 #sidebar-nav .form-control, #sidebar-nav .form-control:not(:focus) {
-  width: 20vw;
-  transition: 0.2s;
-  font-size: 15px;
+  width: 15vw;
+  font-size: 0.7rem;
   transition: 0.2s;
 }
 #sidebar-nav .form-control:focus, #sidebar-nav .form-control:hover {
   margin-left: 0;
   margin-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  #sidebar-nav .form {
+    top: -3rem;
+    width: auto;
+    margin: 0 auto;
+  }
+  #sidebar-nav .form-control, #sidebar-nav .form-control:not(:focus) {
+    width: 8vw;
+    font-size: 15px;
+    transition: 0.2s;
+  }
+  #sidebar-nav .form-control:focus, #sidebar-nav .form-control:hover {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 #sidebar-nav input[type=text] {
   height: 0.3rem;
@@ -11432,7 +11456,7 @@ textarea.form-control-lg {
   transition: 0.5s;
 }
 .topNav .brand-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-variant: small-caps;
 }
 .topNav .navbar-brand {
@@ -11462,9 +11486,10 @@ textarea.form-control-lg {
 .topNav .dropdown-menu .dropdown-item, .topNav .dropdown-menu .dropdown-item:hover, .topNav .dropdown-menu .dropdown-item:focus, .topNav .dropdown-menu .dropdown-item:active {
   color: #fff !important;
   background: inherit;
+  transition: 0.2s;
 }
 .topNav .dropdown-menu .dropdown-item:hover {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: inherit;
   background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
 }
@@ -11499,6 +11524,28 @@ textarea.form-control-lg {
 .services__pic {
   max-width: 100%;
   margin-top: 5rem;
+}
+
+.services__pic a span i {
+  font-size: 6rem;
+  background: linear-gradient(135deg, #492500 40%, #462300 20%, #0F0700);
+  color: transparent;
+  background-clip: text;
+  background-position: top center;
+  -webkit-background-clip: text;
+}
+.services__pic .border-blink {
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid #fff;
+  border-radius: 50%;
+  animation: blink 2s ease infinite;
+}
+.services__pic .border-blink--border-1 {
+  animation-delay: 1s;
+}
+.services__pic .border-blink--border-2 {
+  animation-delay: 1.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -11635,6 +11682,7 @@ textarea.form-control-lg {
 .footer {
   padding: 1rem 0;
   background-color: #291300;
+  color: #F0BE8B !important;
 }
 @media screen and (min-width: 768px) {
   .footer {
@@ -11652,7 +11700,11 @@ textarea.form-control-lg {
 .contact-box__icon {
   width: 2rem;
   padding-top: 1rem;
-  color: #fff;
+  background: linear-gradient(135deg, #7c3f00 20%, #ac5600 40%, #ffb575);
+  color: transparent;
+  background-clip: text;
+  background-position: top center;
+  -webkit-background-clip: text;
 }
 @media screen and (min-width: 365px) {
   .contact-box__icon {
@@ -11664,12 +11716,12 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 .contact-box__info--title {
-  color: #fff;
+  color: #9b5814;
   text-decoration: none;
   font-size: 1rem;
 }
 .contact-box__info--title:hover {
-  color: #F0BE8B;
+  color: #f6d7b8;
 }
 @media screen and (min-width: 365px) {
   .contact-box__info--title {
@@ -11677,7 +11729,7 @@ textarea.form-control-lg {
   }
 }
 .contact-box__info--subtitle {
-  color: #6c757d;
+  color: #F0BE8B;
   text-decoration: none;
   font-size: 0.8rem;
 }
@@ -11687,8 +11739,11 @@ textarea.form-control-lg {
   }
 }
 
+.footer-sm {
+  color: #9b5814;
+}
 .footer-sm a {
-  color: #fff;
+  color: #F0BE8B;
 }
 .footer-sm a i {
   font-size: 1rem;
@@ -11710,26 +11765,26 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .company-list li a {
-  color: #fff;
+  color: #F0BE8B;
   text-decoration: none;
 }
 .company-list li a:hover {
-  color: #24231F;
+  color: #9b5814;
 }
 
 .footer-bottom {
   background-color: #000;
 }
 .footer-bottom__copyright {
-  color: #6c757d;
+  color: #6e3e0e;
   font-weight: 400;
 }
 .footer-bottom__copyright a {
-  color: #e9ecef;
+  color: #c8721a;
   text-decoration: none;
 }
 .footer-bottom__copyright a:hover {
-  color: #24231F;
+  color: #412508;
   text-decoration: underline;
 }
 

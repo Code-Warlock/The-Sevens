@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width , initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <title>BOOTSASS-CLI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/vendors/css/glightbox.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" /> -->
+    <link rel="icon"  href="./assets/images/hayhud_logo.png" />
+    <title>HAYHUD-NIG</title>
   </head>
   <body id="home">
       <!--
@@ -26,13 +30,17 @@
                <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+               <a class="nav-link active text-light" aria-current="page" href="#about">About Us</a>
              </li>
-             <li class="nav-item">
-               <a class="nav-link active text-light" aria-current="page" href="#services">Services</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link text-light" href="#client_views">Testimonials</a>
+             <li class="nav-item dropdown">
+               <span class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Services
+               </span>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#services">Our Service</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#clients">Our Clients</a></li>
+               </ul>
              </li>
              <li class="nav-item">
                <a class="nav-link text-light" href="#faq">FAQs</a>
@@ -41,16 +49,15 @@
                <a class="nav-link text-light" href="#feedback">Contact</a>
              </li>
              <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <span class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Products
-               </a>
+               </span>
                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <li><a class="dropdown-item" href="#products">Explore Products</a></li>
                  <li><hr class="dropdown-divider"></li>
                  <li><a class="dropdown-item" href="#products_gallery">Products Photo Gallery</a></li>
                </ul>
              </li>
-           </li>
            </ul>
            <form class="d-flex">
              <input class="form-control me-2" type="email" required placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter">
@@ -77,19 +84,20 @@
           <a href="#home" class="nav-link text-light ">Home</a>
         </li>
         <li class="nav-item w-100">
-          <a href="#about" class="nav-link text-light ">About</a>
+          <a href="#about" class="nav-link text-light ">About Us</a>
         </li>
-        <li class="nav-item w-100">
-          <a href="#services" class="nav-link text-light ">Services</a>
-        </li>
-        <li class="nav-item w-100">
-          <a href="#client_views" class="nav-link text-light ">Testimonials</a>
-        </li>
+        <li class="nav-item mx-2 w-100 dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#services">Our Services</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#clients">Our Clients</a></li>
+            </ul>
+          </li>
         <li class="nav-item w-100">
           <a href="#faq" class="nav-link text-light ">FAQs</a>
-        </li>
-        <li class="nav-item w-100">
-          <a href="#feedback" class="nav-link text-light ">Contacts</a>
         </li>
         <li class="nav-item mx-2 w-100 dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -101,14 +109,17 @@
               <li><a class="dropdown-item" href="#products_gallery">Products Photo Gallery</a></li>
             </ul>
           </li>
+          <li class="nav-item w-100">
+            <a href="#feedback" class="nav-link text-light ">Contact Us</a>
+          </li>
       </ul>
-      <form class="form input-group mb-5">
-        <input type="email" required class="form-control" placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter" aria-describedby="button-addon2" id="newsletter">
-        <button class="btn btn-sm btn-light" type="submit" id="button-addon2">OK</button>
+      <form class="form input-group mb-5" action="https://formsubmit.co/your@hayhudnig@gmail.com" method="POST">
+        <input type="email" required class="form-control" placeholder="Subscribe to our newsletter" aria-label="Subscribe to our newsletter" aria-describedby="button-addon2" name="email" id="newsletter">
+        <button class="btn btn-sm btn-light text-light" type="submit" id="button-addon2">OK</button>
       </form>
   <div class="call-to-action w-100">
     <div class="text-light d-block">
-      <span>Contact us <a href="mailto:hayhudnig@gmail.com" class="mail-to">@hayhudnig@gmail.com</a></span>
+      <span>Contact us <a href="mailto:hayhudnig@gmail.com?subject=Hayhud Contact Mail" class="mail-to">@hayhudnig@gmail.com</a></span>
       <span class="socials d-block">
         <a href="#"><i class="fab fa-facebook-f xs-mx-4 my-4 px-2"></i></a>
         <a href="#"><i class="fab fa-instagram xs-mx-4 my-4 px-2"></i></a>
@@ -124,20 +135,20 @@
  =============================================================================================================
 -->
 <section>
-  <div id="carouselExampleCaptions" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item animate_animated animate__fadeIn active">
       <img src="./assets/images/product_6.jpg" class="d-block w-100" alt="...">
       <div class="main-carousel-content">
         <div class="carousel-caption d-xs-block">
           <h5>HAYHUD LOCUST BEANS -IRU</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-          <button type="button" class="rounded-pill btn-rounded" name="button">Get in Touch
+          <p>Iru(Locust Beans) is a huge part of the Nigerian spice community. <br>Hayhud-Nig is here to make you enlightened about this precious spice.</p>
+          <button type="button" onclick="window.location.href='#about' "class="rounded-pill btn-rounded" name="button">Explore
           <span>
             <i class="fas fa-arrow-right"></i>
           </span></button>
@@ -149,9 +160,9 @@
       <img src="./assets/images/product_7.jpg" class="d-block w-100" alt="...">
       <div class="main-carousel-content">
         <div class="carousel-caption d-xs-block">
-          <h5>HAYHUD LOCUST BEANS - OKPEHE</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-          <button type="button" class="rounded-pill btn-rounded" name="button">Get in Touch
+          <h5>HAYHUD LOCUST BEANS - OGIRI</h5>
+          <p>Ogiri ( Sometimes made from fermented pumpkin seed) is a popular spice in the SouthEastern part of Nigeria. <br>Hayhud-Nig is here to make you enlightened about this precious spice.</p>
+          <button type="button" onclick="window.location.href='#about' "class="rounded-pill btn-rounded" name="button">Explore
           <span>
             <i class="fas fa-arrow-right"></i>
           </span></button>
@@ -164,8 +175,8 @@
       <div class="main-carousel-content">
         <div class="carousel-caption d-xs-block">
           <h5>HAYHUD LOCUST BEANS -DAWADAWA</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-          <button type="button" class="rounded-pill btn-rounded" name="button">Get in Touch
+          <p>Dawadawa as it is called in the Northern part of Nigeria. <br>Hayhud-Nig is here to make you enlightened about this precious spice.</p>
+          <button type="button" onclick="window.location.href='#about' "class="rounded-pill btn-rounded" name="button">Explore
           <span>
             <i class="fas fa-arrow-right"></i>
           </span></button>
@@ -214,13 +225,13 @@
        <div class="col-md-6 text-start presentation-sect">
          <h1 class="display-5">
            <span class="display-2--intro">Our Vision</span>
-           <span class="display-2--description lead lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates expedita commodi distinctio minus voluptatem exercitationem consequuntur, excepturi modi autem, eligendi quibusdam officiis adipisci.</span>
+           <span class="display-2--description lead lh-base">To Build a  world-class international company with  quality service to our customers based on our commitment to excellence.</span>
          </h1>
        </div>
 
        <div class="col-md-6 text-end presentation-sect">
          <div class="image-box">
-           <img src="./assets/images/worldwide.jpg" class="img-fluid" alt="image illustration">
+           <img src="./assets/illustrations/vision.png" class="img-fluid" alt="image illustration">
          </div>
        </div>
      </div>
@@ -228,32 +239,32 @@
        <div class="col-md-6 text-start presentation-sect">
          <h1 class="display-5">
            <span class="display-2--intro">Our Mission</span>
-           <span class="display-2--description lead lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</span>
+           <span class="display-2--description lead lh-base">To be a  leading Import/ export  company  in the food  and agricultural sectors</span>
          </h1>
        </div>
        <div class="col-md-6 text-end presentation-sect">
          <div class="image-box">
-           <img src="./assets/illustrations/watermelon.png" class="img-fluid" alt="image illustration">
+           <img src="./assets/illustrations/team_goals.png" class="img-fluid" alt="image illustration">
          </div>
        </div>
      </div>
 
-     <div class="row align-items-center presentation">
+     <div id="teams"class="row align-items-center mt-5 pt-5 presentation">
        <div class="col-12 text-center presentation-sect">
          <h1 class="display-3 fw-bold">Meet the Hayhud Team</h1>
          <div class="heading-line"></div>
        </div>
        <div class="row team pt-3 mt-3 mb-3">
-         <div class="col-lg-3 col-md-6 mr-md-3 mt-5 team-profile pl-5 shadow mx-auto">
+         <div class="col-lg-3 col-md-6 mr-md-3 mt-5 team-profile p-5 shadow mx-auto">
           <div class="display-3">
             <h5 class="display-3--intro">Oludotun <br>-<br> The Chief Executive Officer</h5>
             <img src="./assets/images/client_1.jpg" alt="" class="img-fluid rounded-circle">
             <p class="display-2--description">
-              Oludotun holds a Higher Diploma in Secretarial Administration from Osun State Polytechnic Iree Osun State.  She has over 20 years of experience in Office Management and Administration and 10 years experience in the export/import zone.An Associate supply chain Manager per Excellence and a Member of  <abbr title="Nigerian Export Promotion Council">NEPC</abbr>
+              Oludotun holds a Higher Diploma in Secretarial Administration from Osun State Polytechnic Iree Osun State.  She has over 20 years of experience in Office Management and Administration and 10 years experience in the export/import zone.An Associate supply chain Manager per Excellence and a Member of  Nigerian Export Promotion Council <abbr class="d-none d-md-inline" title="Nigerian Export Promotion Council">NEPC</abbr>
             </p>
           </div>
          </div>
-         <div class="col-lg-3 col-md-6 mt-5 ml-md-3 team-profile pl-5 shadow mx-auto">
+         <div class="col-lg-3 col-md-6 mt-5 ml-md-3 team-profile p-5 shadow mx-auto">
            <div class="display-3">
              <h5 class="display-3--intro">Olumide Ogunboyo <br>-<br>Financial Director</h5>
              <img src="./assets/images/client_2.jpg" alt="" class="img-fluid rounded-circle">
@@ -262,10 +273,10 @@
              </p>
            </div>
          </div>
-         <div class="col-lg-3 col-md-6 mx-md-auto mt-5 mt-md-4 mt-lg-0 team-profile pl-5 shadow mx-auto">
+         <div class="col-lg-3 col-md-6 mx-md-auto mt-5 team-profile p-5 shadow mx-auto">
            <div class="display-3">
              <h5 class="display-3--intro">Adebola Oloyede <br>-<br> Director of Logistics</h5>
-             <img src="./assets/images/client_3.jpg" alt="" class="img-fluid rounded-circle">
+             <img src="./assets/images/director_of_logistics.jpeg" alt="" class="img-fluid rounded-circle">
              <p class="display-3--description">
                Adebola Oloyede is a graduate of computer science from the olabisi onabanjo university Ago- iwoye with over 15 years experrience in the IT Industry which allows her to bring great innovation into the logistics field. she has over 5years in the logistics business.
              </p>
@@ -273,29 +284,10 @@
          </div>
        </div>
      </div>
-     <hr class="text-primary w-100 mt-5" style="color:#5d5d5d">
-
-     <!-- <div class="row d-flex flex-row-reverse align-items-center text-light presentation">
-       <div class="col-md-6 text-start presentation-sect">
-         <h1 class="display-5">
-           <span class="display-3--intro">Welcome to HAYHUD</span>
-           <span class="display-3--description lead lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</span>
-         </h1>
-       </div>
-       <div class="col-md-6 text-end presentation-sect">
-         <div class="image-box">
-           <img src="./assets/illustrations/watermelon.png" class="img-fluid" alt="image illustration">
-         </div>
-       </div>
-     </div> -->
+     <hr class="text-primary w-100 mt-5" style="color:#5d5d5d" />
    </div>
  </section>
 
-<!--
-=============================================================================================================
-                                                SERVICES
-=============================================================================================================
- -->
  <section id="services" class="services">
    <div class="container">
      <div class="row text-center">
@@ -307,14 +299,16 @@
        <div class="col-md-6 border-right">
          <div class="bg-white p-3">
            <h2 class="fw-bold text-capitalize title text-center">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             HAYHUD-NIG provides variety of services to both Customers and Affliators.
+
            </h2>
          </div>
        </div>
        <div class="col-md-6">
          <div class="bg-white p-4 text-start">
            <p class="fw-light details">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             HAYHUD-NIG is one of the leading companies in Nigeria that provides a range of services to increase client's satisfaction especially in the areas of <i>Marketing</i> , <i>Customer Care</i> , <i>Exportation</i> and <i>Importation</i>.
+
            </p>
          </div>
        </div>
@@ -324,23 +318,24 @@
    <!-- Content for services -->
    <div class="container">
      <!-- Start services section 1 -->
-     <div class="row">
+     <div class="row d-md-flex flex-row-reverse">
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
          <div class="services__content">
            <div class="icon d-block fas fa-paper-plane"></div>
            <h1 class="display-3--intro mt-1">Marketing</h1>
            <p class="lh-large display-3--description">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
+             HAYHUD provides next level marketing services both locally and internationally.
+             We market our products via all social media platforms thereby maintaining stable connectivity with clients.
            </p>
-           <button type="button" class="rounded-pill btn-rounded bt-outline-primary" name="button">Learn More
+           <!-- <button type="button" class="rounded-pill btn-rounded border-secondary border-secondary" name="button">Learn More
            <span>
              <i class="fas fa-arrow-right"></i>
-           </span></button>
+           </span></button> -->
          </div>
        </div>
          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
          <div class="services__pic">
-           <img src="./assets/illustrations/marketing.png" alt="">
+           <img class="w-100 img-fluid"src="./assets/illustrations/mobile_market.png" alt="">
          </div>
        </div>
      </div>
@@ -354,7 +349,7 @@
            <p class="lh-large display-3--description">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
            </p>
-           <button type="button" class="rounded-pill btn-rounded bt-outline-primary" name="button">Learn More
+           <button type="button" class="rounded-pill btn-rounded border-secondary" name="button">Learn More
            <span>
              <i class="fas fa-arrow-right"></i>
            </span></button>
@@ -375,7 +370,7 @@
            <p class="lh-large display-3--description">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore amet laudantium quis officia beatae dolores dignissimos ipsam soluta. Hic laborum magnam dignissimos, nemo quae rerum optio ipsum.
            </p>
-           <button type="button" class="rounded-pill btn-rounded bordered" name="button">Learn More
+           <button type="button" class="rounded-pill btn-rounded border-secondary" name="button">Learn More
              <span>
                <i class="fas fa-arrow-right"></i>
              </span></button>
@@ -383,7 +378,14 @@
          </div>
        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
          <div class="services__pic">
-            <img src="./assets/illustrations/lunch.png" alt="">
+            <img src="./assets/illustrations/lunch.png" alt="" />
+            <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span class="position-absolute top-30 start-0 translate-middle border-blink border-blink--border-1"></span>
+              <span class="position-absolute top-30 start-0 translate-middle border-blink border-blink--border-2"></span>
+            </a>
          </div>
        </div>
      </div>
@@ -396,7 +398,7 @@
                                         Companies
 =============================================================================================================
   -->
-  <!-- <section id="companies" class="companies">
+  <section id="clients" class="companies">
     <div class="container">
       <div class="row text-center ">
         <h4 class="fw-bold lead mb-3">Meet our Clients</h4>
@@ -414,170 +416,15 @@
         <div class="col-md-4">
           <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
         </div>
-        <div class="col-md-4">
-          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
-        </div>
-        <div class="col-md-4">
-          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
-        </div>
-        <div class="col-md-4">
-          <div class="companies__logo-box shadow-sm"><i class="fab fa-amazon"></i></div>
-        </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!--
 =============================================================================================================
                                     CLIENT VIEWS
 =============================================================================================================
  -->
- <section id="client_views" class="client_views">
-   <div class="container">
-     <div class="row text-center text-white">
-         <h1 class="display-3 text-light fw-bold">Clients Views</h1>
-         <hr style="width:100px;height:3px" class="mx-auto">
-         <p class="lead pt-1">Reviews from our Clients</p>
-     </div>
-     <div class="row align-items-center">
-       <!-- Clients' carousel -->
-
-       <div id="carouselExampleCaptions2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-       <div class="carousel-inner">
-         <!-- CAROUSEL ITEM 1 -->
-         <div class="carousel-item active">
-           <!-- Clients Views Card -->
-          <div class="client_views__card">
-            <p class="lh-lg">
-              <i class="fas fa-quote-left"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
-              <i class="fas fa-quote-right"></i>
-              <div class="ratings p-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-
-            </p>
-          </div>
-          <!-- Client's Picture -->
-          <div class="client_views__pix">
-            <img src="./assets/images/client_1.jpg" alt="Client-1"  class="rounded-circle img-fluid">
-          </div>
-          <!-- Clients' name and role -->
-          <div class="client_views__name">
-            <h3>Code Petrus</h3>
-            <p class="fw-light">CEO & founder</p>
-          </div>
-        </div>
-        <!-- End -->
-
-
-
-          <!-- CAROUSEL ITEM 2 -->
-          <div class="carousel-item">
-            <!-- Clients Views Card -->
-           <div class="client_views__card">
-             <p class="lh-lg">
-               <i class="fas fa-quote-left"></i>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
-               <i class="fas fa-quote-right"></i>
-               <div class="ratings p-1">
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-                 <i class="fas fa-star"></i>
-               </div>
-
-             </p>
-           </div>
-           <!-- Client's Picture -->
-           <div class="client_views__pix">
-             <img src="./assets/images/client_2.jpg" alt="Client-2"  class="rounded-circle img-fluid">
-           </div>
-           <!-- Clients' name and role -->
-           <div class="client_views__name">
-             <h3>Code Warlock</h3>
-             <p class="fw-light">CEO & founder</p>
-           </div>
-         </div>
-         <!-- End -->
-
-
-
-           <!-- CAROUSEL ITEM 3 -->
-           <div class="carousel-item">
-             <!-- Clients Views Card -->
-            <div class="client_views__card">
-              <p class="lh-lg">
-                <i class="fas fa-quote-left"></i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
-                <i class="fas fa-quote-right"></i>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-
-              </p>
-            </div>
-            <!-- Client's Picture -->
-            <div class="client_views__pix">
-              <img src="./assets/images/client_3.jpg" alt="Client-3"  class="rounded-circle img-fluid">
-            </div>
-            <!-- Clients' name and role -->
-            <div class="client_views__name">
-              <h3>Code Warrior</h3>
-              <p class="fw-light">CEO & founder</p>
-            </div>
-          </div>
-          <!-- End -->
-
-
-
-            <!-- CAROUSEL ITEM 4 -->
-            <div class="carousel-item">
-              <!-- Clients Views Card -->
-             <div class="client_views__card">
-               <p class="lh-lg">
-                 <i class="fas fa-quote-left"></i>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, sed placeat omnis quisquam iusto nostrum quae magni maxime eos quaerat?
-                 <i class="fas fa-quote-right"></i>
-                 <div class="ratings p-1">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                 </div>
-               </p>
-             </div>
-             <!-- Client's Picture -->
-             <div class="client_views__pix">
-               <img src="./assets/images/client_4.jpg" alt="Client-4"  class="rounded-circle img-fluid">
-             </div>
-             <!-- Clients' name and role -->
-             <div class="client_views__name">
-               <h3>Captain Code</h3>
-               <p class="fw-light">CEO & founder</p>
-             </div>
-           </div>
-           <!-- End -->
-       </div>
-       <div class="text-center">
-         <button class="btn btn-outline-outline-light text-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev"></button>
-         <button class="btn btn-outline-outline-light text-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next"></button>
-       </div>
-     </div>
-    </div>
-   </div>
- </section>
-
  <!--
 =============================================================================================================
                                    FAQ SECTION
@@ -589,7 +436,7 @@
     <div class="row text-center">
       <h1 class="display-3 fw-bold text-uppercase">faq</h1>
       <div class="heading-line"></div>
-      <p class="lead">Hayhud's Frequently asked questions</p>
+      <p class="lead">Hayhud's Frequently Asked Questions</p>
     </div>
   </div>
   <div class="row mt-5 text-center">
@@ -599,7 +446,7 @@
         <div class="accordion-item shadow mb-3">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #24231F;background-color:#F0BE8B;outline-color:rgba(#F0BE8B,0.5)" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              How good is your delivery services?
+              How good is your delivery service?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -612,7 +459,7 @@
         <div class="accordion-item shadow mb-3">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" style="color: #24231F;background-color:#F0BE8B;outline-color:rgba(#F0BE8B,0.5)" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Does Hayhud have a Customer Care Service
+              Does Hayhud have a Customer Care Service?
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -666,15 +513,7 @@
       <div class="heading-line"></div>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero fuga pariatur.</p>
     </div>
-    <!-- Filter-Tab-buttons -->
-    <!-- <div class="row mt-5 mb-4 gutter-3 text-center">
-      <div class="col-md-12">
-        <button class="btn btn-outline-primary-custom" type="button">All</button>
-        <button class="btn btn-outline-primary-custom" type="button">Hello</button>
-        <button class="btn btn-outline-primary-custom" type="button">Something</button>
-        <button class="btn btn-outline-primary-custom" type="button"> Something else</button>
-      </div>
-    </div> -->
+
 
     <!-- Product Content Items -->
     <div class="row">
@@ -792,19 +631,31 @@
     <div class="row text-center">
       <h1 class="display-3 fw-bold text-capitalize">FEEDBACK</h1>
       <div class="heading-line"></div>
-      <div class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium voluptates beatae saepe.</div>
+      <div class="lead">Please send a feedback on how we can help us satisfy you better.</div>
     </div>
     <!-- Feed back content -->
     <div class="row text-white">
       <div class="col-12 col-lg-6 gradient shadow p-3">
         <div class="feedback-info w-100">
-          <h4 class="display-4 fw-bold">100% Satisfaction</h4>
-          <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit, dolor sed quidem reiciendis qui incidunt esse, aut velit aliquam facilis.</p>
-          <h3 class="display-3--brief">What should I do</h3>
+          <h4 class="display-5 fw-bold">100% Satisfaction</h4>
+          <p class="lh-lg"> We want you to be completely satisfied with every purchase you make. If you are in any way dissatisfied with a product you ordered we’ll exchange it, replace it or refund your money within 30 days of purchase. Simply email us the problem, and we’ll take care of you.</p>
+          <h3 class="display-3--brief">Our Core Values</h3>
           <ul class="feedback-info__list">
-         company-list    <li>Lorem 1</li>
-            <li>Lorem 1</li>
-            <li>Lorem 1</li>
+            <li>Quality. <br>
+              <small>
+                We provide outstanding products and unsurpassed service that, together, deliver premium value to our clients.
+
+              </small>
+            </li>
+            <li>Integrity.
+            <br><small>
+              We uphold the highest standards of integrity in all of our supplies and contracts
+            </small>
+          </li>
+            <li>Teamwork. <br>
+            <small>
+              We work together, across boundaries, to meet the needs of our clients.
+            </small></li>
           </ul>
         </div>
       </div>
@@ -839,7 +690,7 @@
           <i class="fas fa-phone-volume"></i>
         </div>
         <div class="contact-box__info">
-          <a href="" class="contact-box__info--title">Title goes here</a>
+          <a href="" class="contact-box__info--title">Give Hahyhud a call</a>
           <p class="contact-box__info--subtitle">+1 (347) 500-8351</p>
         </div>
       </div>
@@ -850,7 +701,7 @@
 
         </div>
         <div class="contact-box__info">
-          <a href="" class="contact-box__info--title">test@gmail.com</a>
+          <a href="mailto:hayhudnig@gmail.com" class="contact-box__info--title">hayhudnig@gmail.com</a>
           <p class="contact-box__info--subtitle">online support</p>
         </div>
       </div>
@@ -895,26 +746,22 @@
           <h5 class="text-capitalize fw-bold">Products</h5>
           <hr class="bg-white display-inline-block mb-4" style="width:60px;height:2px"/>
           <ul class="list-inline company-list">
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
+            <li><a href="#products">Locust beans</a></li>
+            <li><a href="#sheabutter">Shea butter</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 mx-auto col-lg-2 mb-4">
-          <h5 class="text-capitalize fw-bold">Useful Link</h5>
+          <h5 class="text-capitalize fw-bold">Useful Links</h5>
           <hr class="bg-white display-inline-block mb-4" style="width:60px;height:2px"/>
           <ul class="list-inline company-list">
             <li><a href="#faq">FAQs</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#clients">Clients</a></li>
           </ul>
         </div>
         <div class="col-12 col-sm-6 mx-auto col-lg-2 mb-4">
-          <h5 class="text-capitalize fw-bold">Contact</h5>
+          <h5 class="text-capitalize fw-bold">Contacts</h5>
           <hr class="bg-white display-inline-block mb-4" style="width:60px;height:2px"/>
           <ul class="list-inline company-list">
             <li><a href="#">Account</a></li>
@@ -934,7 +781,7 @@
       <div class="row text-center text-white">
         <div class="col-12">
           <div class="footer-bottom__copyright">
-            &copy;Copyright2021 <a href="#">HAYHUD MAMADOT</a>|Created by <a href="#">Warlock's Web</a>
+            &copy;Copyright2021 <a href="#" target="_blank">HAYHUD NIGERIA</a>|Created by <a href="http://www.github.com/Code-Warlock" target="_blank">Warlock's Web</a>
           </div>
         </div>
       </div>
@@ -947,7 +794,10 @@
   <i class="fas fa-chevron-up"></i>
 </a>
     <!-- JavaScript Bundle with Popper -->
+<script type="text/javascript" src="./assets/vendors/js/glightbox.js"></script>
+<script src="./assets/js/glightbox_play.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./assets/js/media-query.js" charset="utf-8"></script>
+<script src="./assets/js/jquery-3.6.0.min.js" charset="utf-8"></script>
+<script src="./assets/js/main.js" charset="utf-8"></script>
   </body>
 </html>
