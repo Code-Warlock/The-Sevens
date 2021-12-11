@@ -1,0 +1,61 @@
+@use "vars" as *
+/*=========================================================SASS MIXINS============================================================*/
+/*=============== Animations =================*/
+@mixin anima
+  from
+    opacity : $null
+  to
+    opacity : 1
+
+@mixin anima2
+  from
+    opacity: $null.1
+    margin-left: 100vw
+  to
+    opacity: 1
+/*====================Elipsis Effect========*/
+@mixin elipsis
+  white-space: nowrap
+  text-overflow: ellipsis
+/*===================Centraliser=============*/
+@mixin centraliser
+  text-align: center
+  vertical-align: $v-a
+@mixin img_hover
+  cursor: pointer
+  filter: blur(50%)
+  filter: brightness(90%)
+  filter: opacity(80%)
+
+@mixin gradient
+  background: linear-gradient(135deg , $smooth-brown 40% ,$smooth-brown-100 20%,$smooth-brown-900)
+@mixin media-query-down($var)
+  @media screen and (max-width : $var)
+    @content
+
+
+@mixin media-query-up($var)
+  @media screen and (min-width : $var)
+    @content
+
+
+@mixin background-in-text
+  color: transparent
+  background-clip: text
+  background-position: top center
+  -webkit-background-clip : text
+
+
+
+
+// abs-centraliser
+
+@mixin abs-centraliser
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50% , -50%)
+
+// Hover-transition mixin
+@mixin transition-smooth
+  transition: all 1s

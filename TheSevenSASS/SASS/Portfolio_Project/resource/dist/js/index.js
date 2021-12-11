@@ -1,4 +1,4 @@
-/*======================================================JS=======================================*/
+/*=================================================JS=======================================*/
 const BUTTON = document.querySelector(".btn");
 const MAIN  = document.querySelector(".home");
 const MAIN2 = document.querySelector(".hidden_abt");
