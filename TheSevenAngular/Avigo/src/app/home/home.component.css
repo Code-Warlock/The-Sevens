@@ -1,0 +1,81 @@
+
+/* END OF HEADER */
+
+.sec_1 img{
+    /* border-radius: 5px; */
+}
+
+.first{
+    background-image: url(../../assets/img/home-banner_x.jpg);
+    min-height: 60vh;
+    color: white; 
+    top: 30%;
+    margin-left: 40px;
+    margin-right:40px;
+}  
+
+.second{
+    background-image: url(../../assets/img/home-banner1.jpg);
+    min-height: 37vh;
+    color: white; 
+    top: 30%;
+    margin-left: 40px;
+    margin-right:40px; 
+}
+
+.sec_1 .card{
+    outline: none;
+    border: none;
+}
+
+.first .text{
+    padding-top: 5%;
+}
+
+.sec_1 button{
+    color: white;
+    font-size:17px;
+}
+
+/* SEC_2 */
+
+.sec_2 .card{
+    box-shadow: 0 15px 60px rgba(0,0,0,.5);
+}
+
+.sec_2 button{
+    
+    color: white;
+}
+
+
+@media screen and (max-width: 500px) {
+    /* .topnav a:not(:first-child) {display: none;} */
+    .first{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+
+    .second{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+
+    .second button{
+        margin-left: 140px;
+    }
+
+    .second p{
+        margin-left: -1000px;
+    }
+
+    .first{
+        min-height: 43vh;
+    }
+
+    .partners .third_partner{
+        height: 220px;
+        width: 280px;
+    }
+  }
+

@@ -1,0 +1,33 @@
+.sec{
+    background-image: url(../../assets/img/about4.jpg);
+    min-height: 30vh;
+    margin-left: 40px;
+    margin-right: 40px; 
+    background-position: center;
+}
+
+.under_sec{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.sec_1{
+    background-image: url(../../assets/img/about5.jpg);
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 135vh;
+    color: white;
+}
+
+.sec_2{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    /* .topnav a:not(:first-child) {display: none;} */
+    .sec{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+  }

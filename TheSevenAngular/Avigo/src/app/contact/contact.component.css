@@ -1,0 +1,35 @@
+.sec_1{
+    background-image: url(../../assets/img/contact2.jpg);
+    margin-left: 40px;
+    margin-right: 40px;
+    min-height: 30vh;
+    color: white;
+}
+
+.sec_2{
+    
+}
+
+.under_line{
+    border-bottom: 2px solid rgb(226, 226, 0);
+    width: 50px;
+}
+
+.submit-button {
+    background-color:rgb(226, 226, 0); border:rgb(226, 226, 0);
+    color: white;
+}
+
+.submit-button[disabled] {
+    background-color:rgba(246, 246, 116, 0.726) ;
+    color: black;  
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 500px) {
+    /* .topnav a:not(:first-child) {display: none;} */
+    .sec_1{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+  }

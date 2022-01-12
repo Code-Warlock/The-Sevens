@@ -1,0 +1,50 @@
+<div class="sec_1">
+        <div class="container"><br><br><br>
+            <h1 style="font-weight:400; top: 25%" class=" mt-5">Contact Us</h1>
+            <p>GET IN TOUCH</p>
+        </div>
+</div>
+    
+    <br>
+    <div class="">
+        <div class="container">
+            <div>
+                <h1 class="text-center" style="font-weight: 450;">OUR LOCATION</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1853.7255054880418!2d3.3283446392245284!3d7.136036811843493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4c6fc3130c2b%3A0x85cfc1734f8026f5!2sAptech%20Computer%20Education!5e0!3m2!1sen!2sng!4v1572591422403!5m2!1sen!2sng" class="col-sm-12" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div><br>
+            <div class="row">
+                        <div class="col-sm-8">
+                            <h6 style="font-weight:400">FEEDBACK FORM</h6>
+                            <div class="under_line"></div><br><br>
+                            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+                                <input type="text" placeholder="Firstname"    formControlName = "first" class="col-sm-5 col py-1 mb-2" >
+                                <input type="text" placeholder="Lastname"  formControlName = "last" class="col-sm-5 py-1 mb-2 offset-sm-1" >
+                                <span *ngIf="!signupForm.get('first').valid && signupForm.get('first').dirty" class="help-block ml-1 col-sm-12" >Please enter a valid firstname</span>
+                                <input type="email" placeholder="E-mail"   formControlName = "email" class="col-sm-11 py-1 mb-2" >
+                                <input type="text" placeholder="Phone "   formControlName = "phone" class="col-sm-11 py-1 mb-2" >
+                                <input type="text" placeholder="Area of Interest"  formControlName = "interest" class="col-sm-5 py-1" >
+                                <input type="text" placeholder="Area of Residence"  formControlName = "residence" class="col-sm-5 py-1 mb-2 offset-sm-1" >
+                                <input type="text" placeholder="Feedback"  formControlName = "feedback" class="col-sm-11 py-5 mb-2" >
+
+                                <button type="submit" [disabled]="!signupForm.valid" class="col-sm-3 py-3 submit-button">Submit</button><br><br>
+                                <span *ngIf="submitted">Your feedback was successfully sent! Thank you.</span>
+                            </form>                
+                        </div>
+                        <div class="col-sm-4">
+                                <h6 style="font-weight:400">CONTACT INFO</h6>
+                                <div class="under_line"></div><br><br>
+                                <i class="fa fa-home mb-2" style="color: rgb(226, 226, 0)">&nbsp;&nbsp; </i>
+                                <i class="mb-5">22 Quarry Road, Old Savannah Bank Building, Abeokuta, Ogun State.</i><br>
+                                <i class="fa fa-envelope mb-2" style="color: rgb(226, 226, 0)">&nbsp;&nbsp; </i>
+                                <i class=""><a href="mailto:aptechabeokuta@gmail.com">aptechabeokuta@gmail.com</a></i><br>
+                                <i class="fa fa-phone mb-2" style="color: rgb(226, 226, 0)">&nbsp;&nbsp; </i>
+                                <i class="">+2348037217003</i><br>
+                                <i class="fa fa-phone mb-2" style="color: rgb(226, 226, 0)">&nbsp;&nbsp; </i>
+                                <i class="">+2348034152557</i><br>
+                                <i class="fa fa-phone mb-2" style="color: rgb(226, 226, 0)">&nbsp;&nbsp; </i>
+                                <i class="">Contact Developer +2349079870708</i>
+                        </div>
+            </div>
+        </div>
+    </div>
+    

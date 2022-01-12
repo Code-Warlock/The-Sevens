@@ -1,0 +1,36 @@
+footer{
+  background-color:black ;
+   min-height: 18vh;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+
+.coming-footer{
+  min-height: 5vh;
+  margin-left: 0px;
+   margin-right: 0px;
+}
+
+.sourcing-footer{
+  min-height: 5vh;
+  margin-left: 0px;
+   margin-right: 0px;
+
+}
+
+footer a{
+  color: grey;
+}
+
+footer a:hover{
+  color: white;
+  text-decoration: none
+}
+
+@media screen and (max-width: 500px) {
+  /* .topnav a:not(:first-child) {display: none;} */
+  footer{
+      margin-left: 0px;
+      margin-right:0px;
+  }
+}
