@@ -8,19 +8,19 @@
 .first{
     background-image: url(../../assets/img/home-banner_x.jpg);
     min-height: 60vh;
-    color: white; 
+    color: white;
     top: 30%;
     margin-left: 40px;
     margin-right:40px;
-}  
+}
 
 .second{
     background-image: url(../../assets/img/home-banner1.jpg);
     min-height: 37vh;
-    color: white; 
+    color: white;
     top: 30%;
     margin-left: 40px;
-    margin-right:40px; 
+    margin-right:40px;
 }
 
 .sec_1 .card{
@@ -36,6 +36,20 @@
     color: white;
     font-size:17px;
 }
+/* .partners{
+  padding:0 0 5rem 0;
+}
+.company__logo-box{
+  width: 100px;
+  height: 5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+  }
+.company__logo img{
+  height: 100%;
+} */
 
 /* SEC_2 */
 
@@ -44,7 +58,7 @@
 }
 
 .sec_2 button{
-    
+
     color: white;
 }
 
@@ -73,9 +87,4 @@
         min-height: 43vh;
     }
 
-    .partners .third_partner{
-        height: 220px;
-        width: 280px;
-    }
   }
-
