@@ -10,6 +10,6 @@
 // const COLLAPSIBLELINK = document.querySelector(".navbar-collapse a");
 //
 // COLLAPSIBLELINK.onclick = ()=> COLLAPSIBLE.collapse("hide");
-$('.navbar-collapse a').click(function(){
+$('#nav-color').click(function(){
             $(".navbar-collapse").collapse('hide');
         });
