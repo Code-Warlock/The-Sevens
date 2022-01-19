@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "avigo-7608f"
-  }
+    "default": "avigangular",
+    "staging": "avigangular"
+  },
+  "targets": {}
 }
